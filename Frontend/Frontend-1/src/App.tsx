@@ -1,13 +1,13 @@
-import { useState } from 'react'
 import './App.css'
+import { OrderEntryForm } from './assets/EntryForm'
 
 function App() {
 
+
   return (
     <>
-    <div className='text-sm'>
-      Hi there!
-    </div>
+    <h1>Matching Engine Simulator</h1>
+    <OrderEntryForm/>
     </>
   )
 }
