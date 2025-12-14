@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <h1>Matching Engine Simulator</h1>
-    <OrderEntryForm/>
+    <OrderEntryForm sendOrder={sendOrder}/>
     </>
   )
 }

@@ -1,6 +1,15 @@
 import { useState } from "react";
 // export function OrderEntryForm({sendOrder}: {sendOrder: (order: {item: string, quantity: number}) => void}) {
-export function OrderEntryForm() {
+
+interface sendOrder{
+    item:string;
+    type:string;
+    quantity:number;
+    price:number;
+    timestamp:number;
+}
+
+export function OrderEntryForm(sendOrder: sendOrder) {
     const [side, setSide] = useState("buy");
     const [price, setPrice] = useState(0);
     const [qty,setQty] = useState(1);
